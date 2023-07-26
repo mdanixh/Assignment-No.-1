@@ -19,3 +19,23 @@ for (var _i = 0, new_Users_1 = new_Users; _i < new_Users_1.length; _i++) {
     var new_user = new_Users_1[_i];
     _loop_1(new_user);
 }
+//Alternative method
+// Make a list of current users
+var current_users = ["john", "alice", "jane", "bob", "smith"];
+// Make a list of new users
+var new_users = ["joe", "Alice", "mike", "janeDoe", "sMiTh"];
+// Function to check if a username exists in the current_users list
+function isUsernameTaken(username) {
+    var lowerCaseUsername = username.toLowerCase();
+    return current_users.includes(lowerCaseUsername);
+}
+// Loop through the new_users list and check if each username is available
+new_users.forEach(function (username) {
+    var isTaken = isUsernameTaken(username);
+    if (isTaken) {
+        console.log("Sorry, the username '".concat(username, "' is already taken. Please choose a different one."));
+    }
+    else {
+        console.log("The username '".concat(username, "' is available."));
+    }
+});

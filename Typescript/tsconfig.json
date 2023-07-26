@@ -4,6 +4,6 @@
     "target": "ES2016",
     "sourceMap": true,
     "outDir": "dist",
-    "lib": ["ES2016", "DOM"]
+    "lib": ["ES2016", "ES2016.Array.Include", "DOM"]
   }
 }

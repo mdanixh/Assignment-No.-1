@@ -1,4 +1,3 @@
-import { guestlist } from "../Consolidate/ComApp"
 //previous code
 console.log("Great News! We found a bigger dinner table.");
 //adding a new guest to the dinner

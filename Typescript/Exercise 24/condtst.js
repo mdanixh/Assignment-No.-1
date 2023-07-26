@@ -6,7 +6,7 @@ console.log("is personName == 'Meekail'? I predict True.");
 console.log(personName == 'Meekail');
 console.log("Is personName == 'Abdullah'? I predict False.");
 console.log(personName == 'Abdullah');
-console.log("Is personName !== 'Burhan? I predict False.");
+console.log("Is personName !== 'Burhan'? I predict True.");
 console.log(personName !== 'Burhan');
 console.log("Is personName !== 'Arham'? I predict True.");
 console.log(personName !== 'Arham');
@@ -20,6 +20,8 @@ console.log("is message.toLowerCase() == 'hello!'?, I predict True.");
 console.log(message.toLowerCase() == 'hello!');
 console.log("Is message.toLowerCase() == 'goodbye'?, I predict false.");
 console.log(message.toLowerCase() == 'good');
+console.log("is message.toUpperCase() == 'HELLO!'?, I predict true.");
+console.log(message.toUpperCase() == 'HELLO!');
 //Numerical Test
 var age = 29;
 console.log("Is age == 29? I predict True.");

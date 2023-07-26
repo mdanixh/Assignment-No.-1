@@ -16,3 +16,26 @@ for (const new_user of new_Users) {
         console.log(`The username ${new_user} is available.`);
     }
 }
+
+//Alternative method
+// Make a list of current users
+const current_users: any = ["john", "alice", "jane", "bob", "smith"];
+
+// Make a list of new users
+const new_users: any = ["joe", "Alice", "mike", "janeDoe", "sMiTh"];
+
+// Function to check if a username exists in the current_users list
+function isUsernameTaken(username: any): boolean {
+  const lowerCaseUsername = username.toLowerCase();
+  return current_users.includes(lowerCaseUsername);
+}
+
+// Loop through the new_users list and check if each username is available
+new_users.forEach((username) => {
+  const isTaken = isUsernameTaken(username);
+  if (isTaken) {
+    console.log(`Sorry, the username '${username}' is already taken. Please choose a different one.`);
+  } else {
+    console.log(`The username '${username}' is available.`);
+  }
+});
